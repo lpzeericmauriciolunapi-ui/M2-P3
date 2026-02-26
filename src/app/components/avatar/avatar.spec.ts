@@ -1,18 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { AvatarComponent } from './avatar';
 
-import { Avatar } from './avatar';
-
-describe('Avatar', () => {
-  let component: Avatar;
-  let fixture: ComponentFixture<Avatar>;
+describe('AvatarComponent', () => {
+  let component: AvatarComponent;
+  let fixture: ComponentFixture<AvatarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Avatar]
+      imports: [AvatarComponent]  // porque es standalone
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Avatar);
+    fixture = TestBed.createComponent(AvatarComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
